@@ -1,0 +1,39 @@
+body {
+    font-size: 18px;
+}
+header, footer {
+    background-color: rgb(233, 250, 3);
+}
+.site-title {
+    color: rgb(255, 94, 1);
+}
+#my-image {
+    box-shadow: 0px 0px 2px 1px rgb(255, 0, 0);
+}
+ul {
+    list-style-type: square;
+}
+li:nth-child(1) {
+    background: rgb(126, 124, 124);
+}
+a:link {
+    text-decoration: none;
+}
+a:link {
+    background-color: rgb(212, 212, 145);
+}
+a:link {
+    border-style: double;
+}
+a:link {
+    color:blue
+}
+a:visited {
+    color:blue
+}
+a:hover {
+    color:green
+}
+a:active {
+    color:yellowgreen
+}
