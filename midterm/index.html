@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester City</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- wrapper has all the information in the light blue box -->
+    <div class="wrapper">
+        <header class="container">
+            <h1>Manchester City</h1>
+            <img src="images/mancity.jpg" alt="Manchester City Photo frame">
+
+            <!--this is the web page menu needs clearfix class to be correctly put in center -->
+            <nav class="clearfix">
+                <ul class="border-menu">
+                    <li class="border-menu"><a href="#home">Home</a></li>
+                    <li class="border-menu"><a href="#story">Story</a></li>
+                    <li class="border-menu"><a href="#contact-form">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--clearfix class is to let the image not float with the next sections-->
+        <section class="clearfix" id="home">
+            <h2>About Manchester City Football Club</h2>
+            <img src="images/mancity-2.jpg" alt="Manchester City Crest">
+            <p>Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's (West Gorton), it became Ardwick Association Football Club in 1887 and Manchester City in 1894. The club's home ground is the Etihad Stadium in east Manchester, to which it moved in 2003, having played at Maine Road since 1923. The club adopted their sky blue home shirts in 1894 in the first season of the club's current iteration, that have been used ever since.[4] In terms of trophies won, it is the sixth-most successful club in English football. 
+                Manchester City entered the Football League in 1892, and won their first major honour with the FA Cup in 1904. The club had its first major period of success in the late 1960s, winning the League, European Cup Winners Cup, FA Cup and League Cup under the management of Joe Mercer and Malcolm Allison. After losing the 1981 FA Cup Final, the club went through a period of decline, culminating in relegation to the third tier of English football for the only time in its history in 1998. They since regained promotion to the top tier in 2001–02 and have remained a fixture in the Premier League since 2002–03.The club received considerable financial investment in both playing staff and club facilities following the club's takeover by Sheikh Mansour bin Zayed Al Nahyan through the Abu Dhabi United Group in 2008.[5] This started a new era of achievement, with the club winning the FA Cup in 2011 and the Premier League in 2012, both their first since the 1960s, followed by another League in 2014. Under the management of Pep Guardiola City won the Premier League in 2018, becoming the only Premier League team to attain 100 points in a single season. In 2019, they won four trophies, completing an unprecedented sweep of all domestic trophies in England and becoming the first English men's team to win the domestic treble.[6] In addition to winning the third Premier League title in the Guardiola era, City reached their first European Cup final in 2021, where they lost to Chelsea.</p>
+        </section>
+        <!-- Contains the list section of facts -->
+        <section id="story">
+            <h3>Facts About Manchester City Football Club</h3>
+            <ul>
+                <li>MCFC were once relegated while defending their title. They did so while scoring more goals than any other club.</li>
+                <li>MCFC were the first team to win a european trophy and play in the third tier of their league.</li>
+                <li>MCFC were the first club to hold three trophies in a single year</li>
+                <li>MCFC have provided five keepers for the english national football team.</li>
+                <li>MCFC fans have been voted the most loyal fans in the english premiership by the BFFA.
+
+                </li>
+            </ul>
+        </section>
+        <section id="contact-form">
+            <h3>Contact to learn more about ManCity</h3>
+
+            <!--contains the form inside a rectangle with a thin blue border-->
+            <form class="border">
+                <div>
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">Your Email</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="radio">
+                    <h4>Would you like to visit the Manchester City Stadium?</h4>
+                
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="visit" value="yes">
+                
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="visit" value="no">
+                
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="maybe" name="visit" value="maybe">
+                </div>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </form> </section>
+        <footer>
+            <p> Manchester City.</p>
+        </footer> </div>
+</body>
+</html>
