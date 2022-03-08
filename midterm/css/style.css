@@ -1,0 +1,198 @@
+body {
+    background-color: #168af3;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrapper {
+    max-width: 75%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255, .5);
+}
+
+.container {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+}
+
+/* absolute position shows title on top of imagex*/
+h1 {
+    color: #fff;
+    font-size: 3.5rem; 
+    position: absolute; 
+    width: 100%;
+    top: 45%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* the menu needs to work with a float property it needs to be in center */ 
+nav li {
+    float: left;
+    width: 33.3%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* change the colour when the mouse hover over the nav buttons */
+nav li:hover {
+    background-color: rgb(2, 82, 255);
+    font: #fff;
+}
+
+/*change the colur when the user click nav buttons */
+nav li:active {
+    background-color: rgb(255, 255, 255);
+}
+
+/* With border-box respects the 33.3% of the width with a border */
+.border-menu:nth-child(2) {
+    box-sizing: border-box;
+    border-left: 1px solid rgb(2, 82, 255);
+    border-right: 1px solid rgb(2, 82, 255);
+}
+
+nav a {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+section {
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+/* this class needs to be in the parent section of float image */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+section img {
+    width: 300px;
+    float: left; 
+    margin-right: 20px;
+}
+
+p {
+    line-height: 1.40rem;
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: .95rem;   
+}
+
+/* makes the rectangle containing the form */
+.border {
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+/* the display inline block will to add a margin-bottom*/
+label {
+    font-size: 1rem;
+    display: inline-block; 
+    margin-bottom: 7px;
+    font-weight: 600;
+} 
+
+/* type to not change the other inputs border-box will fix input width, make the margin, padding inside */
+input[type='text'] { 
+    box-sizing: border-box;
+    width: 100%;
+    height: 25px;
+    border: 1px solid rgb(2, 82, 255);
+    margin-bottom: 20px;
+    padding: .4rem;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 20px;
+    padding: .4rem;
+    border: 1px solid rgb(2, 82, 255);
+    resize: none;
+}
+
+.radio-button {
+    margin-bottom: 20px;
+}
+
+button {
+    text-transform: uppercase;
+    padding: .7rem;
+    font-size: .7rem;
+    background-color: rgb(255, 255, 255, 0);
+    border: 1px solid #000;
+}
+
+/* change the colour when the arrow hover over the button */
+button:hover {
+    background-color: rgb(255, 255, 255, .5);
+}
+
+button:active {
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: .75rem;
+    text-align: right;
+    padding-bottom: 25px;
+}
