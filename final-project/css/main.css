@@ -1,3 +1,24 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -22,85 +43,39 @@ table {
 }
 
 
-
-.menu {
-    background-color: #222;
-    padding-left: 0px;
-}
-
-
-
-h1 {
-    color: #fff;
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 6rem;
-}
-.main-banner p {
-    color: #fff;
-    padding-top: 20px;
-    font-weight: 500;
-}
-.btn {
-    display: inline-block;
-    padding: 30px;
-    font-size: 1.3rem;
-    font-weight: 400;
-    text-decoration: none;  
-}
-
-.team div:nth-child(3){
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.color-section {
-    margin-bottom: 0px;
-}
-
-.contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "message map"
-    "hours hours"
-}
-
-.message {
-    grid-area: message;
-}
-.hours {
-    grid-area: hours;
-}
-.map {
-    grid-area: map;
-}
-
-form {
-    padding-right: 10px;
-}
-
-}
-
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     margin: 0;
     max-width: 1200px;
 }
+/* start of a header section*/
 
 header {
     background-color: #222;
 }
 
+
 .logo-container img {
-width: 90px;
+width: 70px;
 }
+
+/* added padding to the menu class*/
+
 header>div {
     padding-top: 15px;
 }
+
+
+.menu {
+    background-color: #222;
+    padding-left: 0px;
+}
+
 
 nav {
     display: flex;
@@ -117,6 +92,9 @@ nav .logo-container {
 nav ul {
     flex-basis: 100%;
 }
+
+/* start of the navigation bar section*/
+
 nav a {
     display: inline-block;
     flex-basis: 100%;
@@ -128,50 +106,71 @@ nav a {
     padding-bottom: 25px;
     padding-top: 25px;
 }
-
 nav .search-bar {
     flex-basis: calc(90% - 0px);
     height: 40px;
 }
-
 nav .search-button {
     flex-basis: calc(10% - 0px);
     background-color: #222;
     border: 1px solid #c78c06;
+    height: 40px;
 }
-
 .fa-magnifying-glass {
     color: #c78c06;
     font-size: 1.2rem;
 }
-
 nav li {
     list-style-type: none;
     text-align: center;
 }
+
+/* button color change when button is hovered*/
+
 nav a:hover {
     background-color: #c78c06;
     color: #222;
 }
+
+/* button color change when it is active*/
+
 nav a:active {
     background-color: #c78c06;
     color: #222;
 }
-
 nav a:active::after {
     background-color: #c78c06;
 }
-
+input[type='text'] {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+h1 {
+    color: #fff;
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+.main-banner p {
+    color: #fff;
+    padding-top: 20px;
+    font-weight: 500;
+}
+.btn {
+    display: inline-block;
+    padding: 30px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;  
+}
 .secondary {
     background-color: #c78c06;
     color: #222;
 }
-
 .fa-caret-right {
     padding-left: 10px;
     font-size: 1.5rem;
 }
-
 .main-banner {
     display: grid;
     grid-template-columns: 1fr;
@@ -182,7 +181,9 @@ nav a:active::after {
 }
 img {
     max-width: 100%;
-    height: auto;
+
+}
+.main-banner .flex-container {
     grid-column: 1/2;
     grid-row: 1;
 }
@@ -197,68 +198,61 @@ img {
     padding-left: 20px;
     padding-right: 20px;
 }
-
-
 .color-section {
     background-color: #ffe6ac;
     margin-bottom: 15px;
 }
-
 .wrapper {
     margin: 0 auto;
     padding: 15px;
 }
-
 h2 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 p {
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
     padding-bottom: 1rem;
 }
-
-
+/* services section*/
 .service {
     background-color: #ffe6ac;
     margin-bottom: 15px;
 }
-
 img {
     width: 100%;
 }
-
 div.service div {
     padding: 15px;
 }
-
 h3 {
     font-weight: 700;
     font-size: 2rem;
     padding-bottom: 1rem;
 }
-
 .dark {
     background-color: #222;
     color: #fff;
 }
 
-
+/* vision section*/
 .vision {
     display: grid;
+    background-image: url(images/vision.jpg);
+    background-image: url(../images/vision.jpg);
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    height: 300px;
+    align-items: center;
+    overflow: hidden;
 }
-
 .vision .full-image {  
     width: 100%;
 }
-
 .vision img {
     max-width: 100%;
     grid-column: 1/2;
@@ -267,39 +261,36 @@ h3 {
 .vision div {
     grid-column: 1/2;
     grid-row: 1;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
 }
-
 .vision h3 {
     color: #fff;
 }
-
 .vision p {
     color: #fff;
     font-weight: 500;
 }
-
+.vision .flex-container {
+    display: flex;
+    align-items: center;
+}
 .dark-secondary {
     background-color: rgba(34,34,34,0.8);
     color: #fff;
     border: 1px solid #c78c06;
 }
 
+/* team section*/
 .team-member {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 40px;
     margin-bottom: 20px;
 }
-
 .subtitle {
     font-weight: 800;
     font-size: .8rem;
     padding-bottom: 0px;
 }
-
 hr {
     border: 1px solid #c78c06;
     margin-top: 2px;
@@ -309,6 +300,7 @@ hr {
     line-height: 0;
 }
 
+/* contact us*/
 label {
     display: inline-block;
     font-weight: 500;
@@ -334,7 +326,6 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     border-radius: 3px;
 }
-
 .contact button {
     background-color: #222;
     color: #c78c06;
@@ -344,7 +335,6 @@ textarea {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 table, td, th {
     border: 1px solid #222;
     padding: 15px;
@@ -362,6 +352,7 @@ map {
     width: 100%;
 }
 
+/* footer*/
 footer {
     background-color: #222;
     color: #c78c06;
@@ -374,8 +365,8 @@ footer p {
 footer a {
     color: #c78c06;
 }
-
 @media screen and (min-width: 760px) {
+
     .wrapper {
         width: 80%;
     }
@@ -384,19 +375,45 @@ footer a {
         line-height: 1.2rem;
     }
     nav {
+        flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
     }
-
     .menu {
         display: flex;
         flex-direction: row;
-        flex-wrap: none;
         justify-content: space-evenly;
     }
-
+    nav .logo-container {
+        flex-basis: 98px;
+    }
+    .menu {
+        justify-content: space-evenly;
+    }
+    nav img {
+        width: 100%;
+    }
+    nav a {
+        padding: 15px 25px;
+    }
+    nav .search-bar {
+        flex-basis: calc(20% - 0px);
+    }
+    nav .search-button {
+        flex-basis: calc(5% - 0px);
+    }
     .dark-background {
         width: 80%;
+    }
+        .main-banner {
+        height: 500px;
+    }
+    .flex-container {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
     }
     .about {
         display: grid;
@@ -412,22 +429,41 @@ footer a {
         grid-column: 2/3;
         margin-left: 10px;
     }
+/* our services*/
     .services {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
-
     .digital, .marketing {
-        flex-basis: 50%;
+        flex-basis: calc(50% - 8px);
     }
 
     .video, .web, .print {
-        flex-basis: calc(33.33%);
+        flex-basis: calc(33.33% - 8px);
+    }
+
+    .service div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 60px 110px 80px;
+    }
+
+    .service a {
+        width: 100%;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    .vision {
+        height: 300px;
     }
     .team {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .team .responsive-image {
@@ -439,4 +475,33 @@ footer a {
         grid-row: 2/3;
     }
 
-    
+    .team div:nth-child(3){
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .color-section {
+        margin-bottom: 0px;
+    }
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "message map"
+        "hours hours"
+    }
+
+    .message {
+        grid-area: message;
+    }
+    .hours {
+        grid-area: hours;
+    }
+    .map {
+        grid-area: map;
+    }
+
+    form {
+        padding-right: 10px;
+    }
+
+}
