@@ -218,6 +218,27 @@ p {
     line-height: 1.5rem;
     padding-bottom: 1rem;
 }
+/* team section*/
+.team-member {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+.subtitle {
+    font-weight: 800;
+    font-size: .8rem;
+    padding-bottom: 0px;
+}
+hr {
+    border: 1px solid #c78c06;
+    margin-top: 2px;
+    margin-bottom: 15px;
+}
+.team div {
+    line-height: 0;
+}
+
 /* services section*/
 .service {
     background-color: #ffe6ac;
@@ -279,25 +300,81 @@ h3 {
     border: 1px solid #c78c06;
 }
 
-/* team section*/
-.team-member {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 40px;
-    margin-bottom: 20px;
+
+/* our services*/
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.subtitle {
-    font-weight: 800;
-    font-size: .8rem;
-    padding-bottom: 0px;
+.digital, .marketing {
+    flex-basis: calc(50% - 8px);
 }
-hr {
-    border: 1px solid #c78c06;
-    margin-top: 2px;
-    margin-bottom: 15px;
+
+.video, .web, .print {
+    flex-basis: calc(33.33% - 8px);
 }
-.team div {
-    line-height: 0;
+
+.service div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 60px 110px 80px;
+}
+
+.service a {
+    width: 100%;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.7rem;
+}
+
+.vision {
+    height: 300px;
+}
+.team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.team .responsive-image {
+    grid-column: 1/2;
+}
+
+.team div:nth-child(4){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.team div:nth-child(3){
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.color-section {
+    margin-bottom: 0px;
+}
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "message map"
+    "hours hours"
+}
+.message {
+    grid-area: message;
+}
+.hours {
+    grid-area: hours;
+}
+.map {
+    grid-area: map;
+}
+
+form {
+    padding-right: 10px;
+}
+
 }
 
 /* contact us*/
@@ -429,79 +506,3 @@ footer a {
         grid-column: 2/3;
         margin-left: 10px;
     }
-/* our services*/
-    .services {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .digital, .marketing {
-        flex-basis: calc(50% - 8px);
-    }
-
-    .video, .web, .print {
-        flex-basis: calc(33.33% - 8px);
-    }
-
-    .service div {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 60px 110px 80px;
-    }
-
-    .service a {
-        width: 100%;
-        text-align: center;
-    }
-
-    h3 {
-        font-size: 1.7rem;
-    }
-
-    .vision {
-        height: 300px;
-    }
-    .team {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .team .responsive-image {
-        grid-column: 1/2;
-    }
-
-    .team div:nth-child(4){
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .team div:nth-child(3){
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    .color-section {
-        margin-bottom: 0px;
-    }
-    .contact {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "message map"
-        "hours hours"
-    }
-
-    .message {
-        grid-area: message;
-    }
-    .hours {
-        grid-area: hours;
-    }
-    .map {
-        grid-area: map;
-    }
-
-    form {
-        padding-right: 10px;
-    }
-
-}
